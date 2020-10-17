@@ -8,9 +8,6 @@ import androidx.room.Query
 @Dao
 interface DaoProducts {
 
-    @Query("select * from products_table")
-    fun getAllProducts(): LiveData<List<EntityProducts>>
-
     @Query("select * from details_table")
     fun getAllDetails(): LiveData<List<EntityProducts>>
 

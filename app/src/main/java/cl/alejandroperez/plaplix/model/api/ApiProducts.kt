@@ -4,10 +4,10 @@ import retrofit2.http.GET
 
 interface ApiProducts {
 
-    @GET("products")
-    fun getAllProducts(): ArrayList<Products>
+   /* @GET("products")
+    fun getAllProducts(): ArrayList<Products>*/
 
     @GET("details")
-    fun getAllDetails(): ArrayList<ProductsItem>
+    fun getAllDetails(): ArrayList<Details>
 
 }
