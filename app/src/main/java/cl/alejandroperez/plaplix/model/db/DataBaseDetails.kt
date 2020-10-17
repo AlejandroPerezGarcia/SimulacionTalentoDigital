@@ -7,16 +7,16 @@ import androidx.room.RoomDatabase
 
 
 @Database(entities = [EntityDetails::class],version = 1)
-abstract class DataBaseProducts : RoomDatabase(){
+abstract class DataBaseDetails : RoomDatabase(){
 
-    abstract fun getDaoProducts() : DaoProducts
+    abstract fun getDaoDetails() : DaoDetails
 
     companion object {
 
         @Volatile
-        private var INSTANCE: DataBaseProducts? = null
+        private var INSTANCE: DataBaseDetails? = null
 
-        fun getDatabase(context: Context): DataBaseProducts {
+        fun getDatabase(context: Context): DataBaseDetails {
             val tempInstance =
                 INSTANCE
             if (tempInstance != null) {
@@ -26,7 +26,7 @@ abstract class DataBaseProducts : RoomDatabase(){
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    DataBaseProducts::class.java,
+                    DataBaseDetails::class.java,
                     "amiibo_database"
                 ).build()
                 INSTANCE = instance

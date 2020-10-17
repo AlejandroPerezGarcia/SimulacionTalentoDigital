@@ -6,7 +6,7 @@
     tools:context=".view.ListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RecyclerViewList"
+        android:id="@+id/DetailRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </FrameLayout>
