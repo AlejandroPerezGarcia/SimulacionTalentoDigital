@@ -13,7 +13,7 @@ import cl.alejandroperez.plaplix.viewmodel.DetailsViewModel
 class ListFragment : Fragment() {
         private var details = ArrayList<EntityDetails>()
         private lateinit var adapter : AdapterDetails
-    private lateinit var DetailsViewModel : DetailsViewModel
+         private lateinit var DetailsViewModel : DetailsViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class ListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.list_products, container, false)
     }
 
     companion object {
@@ -34,6 +34,8 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         adapter = AdapterDetails(details)
+        
+
 
 
     }
