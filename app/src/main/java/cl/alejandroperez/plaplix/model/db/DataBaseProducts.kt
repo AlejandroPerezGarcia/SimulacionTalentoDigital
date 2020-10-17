@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 
-@Database(entities = [EntityProducts::class],version = 1)
+@Database(entities = [EntityDetails::class],version = 1)
 abstract class DataBaseProducts : RoomDatabase(){
 
     abstract fun getDaoProducts() : DaoProducts

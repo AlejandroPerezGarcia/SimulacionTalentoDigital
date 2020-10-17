@@ -3,7 +3,7 @@ package cl.alejandroperez.plaplix.model.api
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-private const val BASE_URl = "http://my-json-server.typicode.com/Himuravidal/FakeAPIdata/"
+private const val BASE_URl = "https://my-json-server.typicode.com/Himuravidal/FakeAPIdata/"
 
 class RetrofitProducts{
     companion object {
